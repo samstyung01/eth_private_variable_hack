@@ -1,4 +1,25 @@
-# Basic Sample Hardhat Project
+# To compile the smart contract
+```
+npx hardhat compile
+```
+
+# To deploy the smart contract to e.g. ganache
+```
+npx hardhat run ./script/sample-script.js
+```
+
+# To hack the private variable in the smart contract
+```
+npx hardhat hack
+```
+
+
+
+
+
+
+
+<!-- # Basic Sample Hardhat Project
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
@@ -13,3 +34,4 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+ -->
