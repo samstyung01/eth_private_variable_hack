@@ -3,14 +3,15 @@
 npx hardhat compile
 ```
 
-# To deploy the smart contract to e.g. ganache
+# To deploy the smart contract to ganache
+start ganache, and then the command to deploy
 ```
 npx hardhat run ./script/sample-script.js
 ```
 
 # To hack the private variable in the smart contract
 ```
-npx hardhat hack
+npx hardhat hack <deployed_contract_address>
 ```
 
 

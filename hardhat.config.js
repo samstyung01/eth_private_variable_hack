@@ -19,8 +19,12 @@ const hex_to_ascii = _hex => {
   return str;
 }
 
-task("hack", "get private value", async (taskArgs, hre) => {
-  const address = "0x43BC5F92e56b2E49bb7869FFF384445dC3FB28f4";
+task("hack", "get private value")
+.addParam("target", "Target's contract address")
+.setAction(async (taskArgs, hre) => {
+  console.log("target contract address", taskArgs.target);
+
+  const address = taskArgs.target;
   const provider = await hre.ethers.getDefaultProvider('http://localhost:8545');
   console.log('provider', provider);
 
